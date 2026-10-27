@@ -1,8 +1,8 @@
 {
   "project": "Godavari Guide",
   "dataset_title": "Godavari Pushkaralu 2027 — Pilgrim Location Evidence Registry",
-  "dataset_version": "1.0",
-  "last_reviewed": "2026-10-27",
+  "dataset_version": "1.1",
+  "last_reviewed": "2026-10-28",
   "important_note": "Research registry, not a live operational feed. Planned works, reported works, transport options, facility availability, and contacts must be rechecked against current official notices before being presented as confirmed.",
   "status_definitions": {
     "official_fact": "A government or official tourism page supports the stated general fact.",
@@ -219,7 +219,7 @@
           "fact_translations": {
             "en": "The district portal lists Sri Gnana Saraswathi Devasthanam at Basara as a temple/tourist destination.",
             "te": "జిల్లా పోర్టల్‌లో బాసరలోని శ్రీ జ్ఞాన సరస్వతి దేవస్థానం ఆలయం/పర్యాటక ప్రదేశంగా పేర్కొనబడింది.",
-            "hi": "El portal del distrito incluye el templo Sri Gnana Saraswathi Devasthanam de Basara como destino religioso y turístico."
+            "hi": "जिला पोर्टल में बासर स्थित श्री ज्ञान सरस्वती देवस्थानम को मंदिर/पर्यटन स्थल के रूप में सूचीबद्ध किया गया है।"
           }
         },
         {
@@ -237,7 +237,7 @@
           "fact_translations": {
             "en": "General access information is available on the district page; the best current train-and-road combination and event-period bus schedules must be checked before publication.",
             "te": "జిల్లా పేజీలో సాధారణ రాకపోకల సమాచారం ఉంది. ప్రయాణానికి ముందు ప్రస్తుత రైలు–రోడ్డు మార్గం మరియు పుష్కరాల ప్రత్యేక బస్సు సమయాలను తనిఖీ చేయాలి.",
-            "hi": "La página del distrito ofrece información general de acceso. Antes de viajar, compruebe las combinaciones actuales de tren y carretera y los horarios especiales de autobús."
+            "hi": "जिला पृष्ठ पर सामान्य पहुँच संबंधी जानकारी उपलब्ध है। प्रकाशन से पहले वर्तमान रेल और सड़क मार्ग तथा आयोजन अवधि की बस समय-सारिणी की जाँच करें।"
           }
         },
         {
@@ -253,7 +253,7 @@
           "fact_translations": {
             "en": "Check the official tourism hotel directory for Basara listings; room availability and Pushkaralu-period pricing are not guaranteed.",
             "te": "బాసర వసతి జాబితాల కోసం అధికారిక పర్యాటక హోటల్ డైరెక్టరీని చూడండి; గదుల లభ్యత లేదా పుష్కరాల ధరలకు హామీ లేదు.",
-            "hi": "Consulte el directorio hotelero oficial para ver alojamientos en Basara; no se garantiza disponibilidad ni precios durante Pushkaralu."
+            "hi": "बासर में आवास की सूची के लिए आधिकारिक पर्यटन होटल निर्देशिका देखें। पुष्करालु अवधि में कमरों की उपलब्धता और कीमतों की गारंटी नहीं है।"
           }
         },
         {
@@ -269,7 +269,7 @@
           "fact_translations": {
             "en": "Pushkaralu-specific bathing access, toilets, drinking water, changing rooms, medical posts, parking and accessibility arrangements have not been confirmed in this registry.",
             "te": "పుష్కరాల కోసం స్నాన ఘాట్ ప్రవేశం, మరుగుదొడ్లు, తాగునీరు, దుస్తులు మార్చుకునే గదులు, వైద్య కేంద్రాలు, పార్కింగ్ మరియు అందుబాటు ఏర్పాట్లు ఈ రిజిస్ట్రీలో నిర్ధారించబడలేదు.",
-            "hi": "Esta ficha no confirma el acceso a los ghats ni la disponibilidad de baños, agua potable, vestuarios, puestos médicos, estacionamiento o accesibilidad durante Pushkaralu."
+            "hi": "इस रजिस्ट्री में पुष्करालु के दौरान स्नान घाट तक पहुँच, शौचालय, पेयजल, कपड़े बदलने के कमरे, चिकित्सा केंद्र, पार्किंग और सुगम पहुँच की पुष्टि नहीं की गई है।"
           }
         },
         {
@@ -286,7 +286,7 @@
           "fact_translations": {
             "en": "Use the statewide emergency directory and confirm local police/medical facilities before displaying location-specific details.",
             "te": "రాష్ట్రవ్యాప్త అత్యవసర సంప్రదింపు డైరెక్టరీని ఉపయోగించండి; ప్రదేశానికి సంబంధించిన పోలీసు మరియు వైద్య సేవలను చూపించే ముందు నిర్ధారించండి.",
-            "hi": "Use el directorio estatal de emergencias y confirme los servicios policiales y médicos locales antes de publicar datos específicos del lugar."
+            "hi": "स्थान-विशिष्ट जानकारी प्रकाशित करने से पहले राज्य की आपातकालीन निर्देशिका देखें और स्थानीय पुलिस तथा चिकित्सा सुविधाओं की पुष्टि करें।"
           }
         }
       ]
@@ -316,7 +316,7 @@
           "fact_translations": {
             "en": "Dharmapuri is associated with Sri Lakshmi Narasimha Swamy Temple and a Godavari bathing location.",
             "te": "ధర్మపురి శ్రీ లక్ష్మీ నరసింహ స్వామి ఆలయం మరియు గోదావరి స్నాన ప్రాంతంతో సంబంధం కలిగి ఉంది.",
-            "hi": "Dharmapuri está vinculada al templo Sri Lakshmi Narasimha Swamy y a una zona de baño en el Godavari."
+            "hi": "धर्मपुरी का संबंध श्री लक्ष्मी नरसिंह स्वामी मंदिर और गोदावरी नदी के स्नान स्थल से है।"
           }
         },
         {
@@ -332,7 +332,7 @@
           "fact_translations": {
             "en": "A preliminary land-acquisition notification for two separate roads in Dharmapuri Municipality linked to Godavari Pushkaralu 2027 is listed with start date 2026-09-30 and end date 2026-11-28.",
             "te": "గోదావరి పుష్కరాలు 2027కు సంబంధించిన ధర్మపురి మున్సిపాలిటీలోని రెండు రహదారులపై ప్రాథమిక భూసేకరణ నోటిఫికేషన్ జాబితాలో ఉంది. ప్రారంభ తేదీ 2026-09-30, ముగింపు తేదీ 2026-11-28గా పేర్కొనబడింది.",
-            "hi": "Se ha publicado una notificación preliminar de adquisición de terrenos para dos carreteras de Dharmapuri vinculadas a Pushkaralu 2027. Indica fechas del 30-09-2026 al 28-11-2026."
+            "hi": "गोदावरी पुष्करालु 2027 से संबंधित धर्मपुरी नगरपालिका की दो अलग-अलग सड़कों के लिए प्रारंभिक भूमि-अधिग्रहण अधिसूचना सूचीबद्ध है। इसमें प्रारंभ तिथि 30-09-2026 और अंतिम तिथि 28-11-2026 दी गई है।"
           }
         },
         {
@@ -348,7 +348,7 @@
           "fact_translations": {
             "en": "A news report dated 2026-10-24 reports planned 470-metre ghats and preparation of roads, changing rooms, drinking water, sanitation, electricity, medical services and parking.",
             "te": "2026-10-24 నాటి వార్తా నివేదికలో 470 మీటర్ల ఘాట్‌ల ప్రణాళికతో పాటు రహదారులు, దుస్తులు మార్చుకునే గదులు, తాగునీరు, పారిశుధ్యం, విద్యుత్, వైద్య సేవలు మరియు పార్కింగ్ ఏర్పాట్లను పేర్కొంది.",
-            "hi": "Un informe del 24-10-2026 describe planes para ghats de 470 metros y mejoras de carreteras, vestuarios, agua potable, saneamiento, electricidad, servicios médicos y estacionamiento."
+            "hi": "24-10-2026 की एक समाचार रिपोर्ट में 470 मीटर के घाटों की योजना और सड़कें, कपड़े बदलने के कमरे, पेयजल, स्वच्छता, बिजली, चिकित्सा सेवाएँ तथा पार्किंग की तैयारियों का उल्लेख है।"
           }
         },
         {
@@ -366,7 +366,7 @@
           "fact_translations": {
             "en": "Check TGSRTC and district road notices for current routes, diversions, parking and event-period special services.",
             "te": "ప్రస్తుత మార్గాలు, రహదారి మళ్లింపులు, పార్కింగ్ మరియు ప్రత్యేక బస్సు సేవల కోసం TGSRTC మరియు జిల్లా రహదారి నోటీసులను చూడండి.",
-            "hi": "Consulte TGSRTC y los avisos viales del distrito para conocer rutas, desvíos, estacionamiento y servicios especiales de autobús actuales."
+            "hi": "वर्तमान मार्गों, सड़क डायवर्जन, पार्किंग और आयोजन अवधि की विशेष सेवाओं के लिए TGSRTC तथा जिला सड़क सूचनाएँ जाँचें।"
           }
         },
         {
@@ -382,7 +382,7 @@
           "fact_translations": {
             "en": "Use the official tourism hotel directory and district announcements; a dedicated event-period room allocation has not been verified.",
             "te": "అధికారిక పర్యాటక హోటల్ డైరెక్టరీ మరియు జిల్లా ప్రకటనలను చూడండి; పుష్కరాల కాలానికి ప్రత్యేక గది కేటాయింపులు నిర్ధారించబడలేదు.",
-            "hi": "Consulte el directorio hotelero oficial y los avisos del distrito; no se ha confirmado una asignación especial de habitaciones para Pushkaralu."
+            "hi": "आधिकारिक पर्यटन होटल निर्देशिका और जिला घोषणाएँ देखें। आयोजन अवधि के लिए विशेष कमरे आवंटित होने की पुष्टि नहीं हुई है।"
           }
         },
         {
@@ -399,7 +399,7 @@
           "fact_translations": {
             "en": "Use statewide emergency numbers and check the police directory for current Jagtial district contacts.",
             "te": "రాష్ట్రవ్యాప్త అత్యవసర నంబర్లను ఉపయోగించండి మరియు జాగిత్యాల జిల్లా పోలీసు డైరెక్టరీలో ప్రస్తుత సంప్రదింపులను తనిఖీ చేయండి.",
-            "hi": "Use los números estatales de emergencia y compruebe los contactos actuales del directorio policial del distrito de Jagtial."
+            "hi": "राज्य के आपातकालीन नंबरों का उपयोग करें और जगीत्याल जिले के वर्तमान संपर्कों के लिए पुलिस निर्देशिका जाँचें।"
           }
         }
       ]
@@ -428,7 +428,7 @@
           "fact_translations": {
             "en": "The Jagtial district portal identifies Sri Koteshwara Swamy Temple at Kotilingala, Velgatur mandal, on the Godavari riverbank.",
             "te": "జాగిత్యాల జిల్లా పోర్టల్ గోదావరి తీరంలోని వెల్గటూర్ మండలం, కోటిలింగాలలో శ్రీ కోటేశ్వర స్వామి ఆలయాన్ని గుర్తిస్తుంది.",
-            "hi": "El portal del distrito de Jagtial identifica el templo Sri Koteshwara Swamy en Kotilingala, mandal de Velgatur, a orillas del Godavari."
+            "hi": "जगीत्याल जिला पोर्टल गोदावरी तट पर वेलगटूर मंडल के कोटिलिंगाला स्थित श्री कोटेश्वर स्वामी मंदिर की जानकारी देता है।"
           }
         },
         {
@@ -444,7 +444,7 @@
           "fact_translations": {
             "en": "A news report dated 2026-10-24 describes a planned 210-metre ghat at Kotilingala.",
             "te": "2026-10-24 నాటి వార్తా నివేదిక కోటిలింగాలలో 210 మీటర్ల ఘాట్ నిర్మాణ ప్రణాళికను వివరిస్తుంది.",
-            "hi": "Un informe del 24-10-2026 describe un plan para construir un ghat de 210 metros en Kotilingala."
+            "hi": "24-10-2026 की एक समाचार रिपोर्ट में कोटिलिंगाला में 210 मीटर के घाट की योजना का उल्लेख है।"
           }
         },
         {
@@ -461,7 +461,7 @@
           "fact_translations": {
             "en": "Use official TGSRTC information and current district road notices; no confirmed special Pushkaralu bus timetable is recorded here.",
             "te": "అధికారిక TGSRTC సమాచారం మరియు తాజా జిల్లా రహదారి నోటీసులను చూడండి; పుష్కరాల ప్రత్యేక బస్సు సమయాలు ఇక్కడ నిర్ధారించబడలేదు.",
-            "hi": "Consulte la información oficial de TGSRTC y los avisos viales recientes; aquí no consta un horario especial de autobuses confirmado."
+            "hi": "आधिकारिक TGSRTC जानकारी और जिला सड़क सूचनाएँ जाँचें। यहाँ पुष्करालु के लिए विशेष बस समय-सारिणी की पुष्टि दर्ज नहीं है।"
           }
         },
         {
@@ -477,7 +477,7 @@
           "fact_translations": {
             "en": "Toilets, drinking water, changing rooms, medical posts, parking, accessibility and crowd controls require current official confirmation.",
             "te": "మరుగుదొడ్లు, తాగునీరు, దుస్తులు మార్చుకునే గదులు, వైద్య కేంద్రాలు, పార్కింగ్, అందుబాటు మరియు రద్దీ నియంత్రణకు తాజా అధికారిక నిర్ధారణ అవసరం.",
-            "hi": "Se requiere confirmación oficial actual de baños, agua potable, vestuarios, puestos médicos, estacionamiento, accesibilidad y control de multitudes."
+            "hi": "शौचालय, पेयजल, कपड़े बदलने के कमरे, चिकित्सा केंद्र, पार्किंग, सुगम पहुँच और भीड़ नियंत्रण के लिए वर्तमान आधिकारिक पुष्टि आवश्यक है।"
           }
         },
         {
@@ -493,7 +493,7 @@
           "fact_translations": {
             "en": "Check official tourism listings and district notices; event-period room availability has not been confirmed.",
             "te": "అధికారిక పర్యాటక జాబితాలు మరియు జిల్లా ప్రకటనలను చూడండి; పుష్కరాల కాలపు వసతి లభ్యత నిర్ధారించబడలేదు.",
-            "hi": "Consulte los listados turísticos oficiales y los avisos del distrito; no se ha confirmado alojamiento disponible durante Pushkaralu."
+            "hi": "आधिकारिक पर्यटन सूची और जिला सूचनाएँ देखें। आयोजन अवधि में कमरों की उपलब्धता की पुष्टि नहीं हुई है।"
           }
         },
         {
@@ -510,7 +510,7 @@
           "fact_translations": {
             "en": "Use statewide emergency numbers and confirm local police/medical posts before travel.",
             "te": "రాష్ట్రవ్యాప్త అత్యవసర నంబర్లను ఉపయోగించండి; ప్రయాణానికి ముందు స్థానిక పోలీసు మరియు వైద్య కేంద్రాలను నిర్ధారించండి.",
-            "hi": "Use los números estatales de emergencia y confirme los puestos locales de policía y atención médica antes de viajar."
+            "hi": "राज्य के आपातकालीन नंबरों का उपयोग करें और यात्रा से पहले स्थानीय पुलिस तथा चिकित्सा केंद्रों की पुष्टि करें।"
           }
         }
       ]
@@ -539,7 +539,7 @@
           "fact_translations": {
             "en": "A news report dated 2026-10-24 describes plans for a 180-metre bathing ghat at Manthani.",
             "te": "2026-10-24 నాటి వార్తా నివేదిక మంథనిలో 180 మీటర్ల స్నాన ఘాట్ ప్రణాళికను వివరిస్తుంది.",
-            "hi": "Un informe del 24-10-2026 describe planes para un ghat de baño de 180 metros en Manthani."
+            "hi": "24-10-2026 की एक समाचार रिपोर्ट में मंथनी में 180 मीटर के स्नान घाट की योजना का उल्लेख है।"
           }
         },
         {
@@ -556,7 +556,7 @@
           "fact_translations": {
             "en": "The report describes road work between Manthani bus depot and the riverbank, plus a road towards Ramagundam Road; current route conditions and diversions must be checked.",
             "te": "మంథని బస్ డిపో నుంచి నదీ తీరానికి, అలాగే రామగుండం రోడ్డువైపు రహదారి పనులను నివేదిక పేర్కొంది. ప్రస్తుత మార్గాలు మరియు మళ్లింపులను తనిఖీ చేయాలి.",
-            "hi": "El informe menciona obras entre la estación de autobuses de Manthani y la ribera, y hacia Ramagundam Road. Compruebe las rutas y desvíos actuales."
+            "hi": "रिपोर्ट में मंथनी बस डिपो से नदी तट तक तथा रामागुंडम रोड की ओर सड़क कार्य का उल्लेख है। वर्तमान मार्ग की स्थिति और डायवर्जन जाँचें।"
           }
         },
         {
@@ -572,7 +572,7 @@
           "fact_translations": {
             "en": "Changing rooms, drinking water, sanitation, medical services, parking and crowd management were described as planned facilities; current availability is not confirmed.",
             "te": "దుస్తులు మార్చుకునే గదులు, తాగునీరు, పారిశుధ్యం, వైద్య సేవలు, పార్కింగ్ మరియు రద్దీ నిర్వహణను ప్రణాళికాబద్ధమైన సదుపాయాలుగా పేర్కొన్నారు; ప్రస్తుత లభ్యత నిర్ధారించబడలేదు.",
-            "hi": "Se describieron vestuarios, agua potable, saneamiento, servicios médicos, estacionamiento y gestión de multitudes como servicios previstos; su disponibilidad actual no está confirmada."
+            "hi": "कपड़े बदलने के कमरे, पेयजल, स्वच्छता, चिकित्सा सेवाएँ, पार्किंग और भीड़ प्रबंधन को प्रस्तावित सुविधाओं के रूप में बताया गया था; वर्तमान उपलब्धता की पुष्टि नहीं है।"
           }
         },
         {
@@ -588,7 +588,7 @@
           "fact_translations": {
             "en": "No dedicated Pushkaralu-period accommodation inventory was confirmed in the reviewed sources.",
             "te": "పరిశీలించిన మూలాల్లో పుష్కరాల కాలానికి ప్రత్యేక వసతి జాబితా నిర్ధారించబడలేదు.",
-            "hi": "Las fuentes revisadas no confirmaron un inventario especial de alojamiento para el período de Pushkaralu."
+            "hi": "समीक्षा किए गए स्रोतों में पुष्करालु अवधि के लिए विशेष आवास सूची की पुष्टि नहीं हुई है।"
           }
         },
         {
@@ -605,7 +605,7 @@
           "fact_translations": {
             "en": "Use statewide emergency numbers and verify local Peddapalli district police and medical facilities.",
             "te": "రాష్ట్రవ్యాప్త అత్యవసర నంబర్లను ఉపయోగించండి; పేద్దపల్లి జిల్లా పోలీసు మరియు వైద్య సేవలను నిర్ధారించండి.",
-            "hi": "Use los números estatales de emergencia y confirme los servicios policiales y médicos del distrito de Peddapalli."
+            "hi": "राज्य के आपातकालीन नंबरों का उपयोग करें और पेद्दापल्ली जिले की स्थानीय पुलिस तथा चिकित्सा सुविधाओं की पुष्टि करें।"
           }
         }
       ]
@@ -635,7 +635,7 @@
           "fact_translations": {
             "en": "Telangana Tourism lists Kaleshwaram as a destination.",
             "te": "తెలంగాణ పర్యాటక శాఖ కాళేశ్వరాన్ని పర్యాటక గమ్యస్థానంగా జాబితా చేస్తుంది.",
-            "hi": "Turismo de Telangana incluye Kaleshwaram como destino."
+            "hi": "तेलंगाना पर्यटन पोर्टल कालेश्वरम को एक पर्यटन स्थल के रूप में सूचीबद्ध करता है।"
           }
         },
         {
@@ -651,7 +651,7 @@
           "fact_translations": {
             "en": "Check current TGSRTC schedules and local district road notices; no confirmed event-period special timetable is recorded here.",
             "te": "ప్రస్తుత TGSRTC సమయాలు మరియు జిల్లా రహదారి నోటీసులను చూడండి; ఈవెంట్ కాలపు ప్రత్యేక సమయాలు నిర్ధారించబడలేదు.",
-            "hi": "Consulte los horarios actuales de TGSRTC y los avisos viales del distrito; no se ha confirmado un horario especial para el evento."
+            "hi": "TGSRTC की वर्तमान समय-सारिणी और स्थानीय जिला सड़क सूचनाएँ जाँचें। आयोजन अवधि की विशेष समय-सारिणी की पुष्टि दर्ज नहीं है।"
           }
         },
         {
@@ -667,7 +667,7 @@
           "fact_translations": {
             "en": "Approved bathing areas, river-level restrictions, medical posts, toilets, drinking water, parking and accessibility require event-specific official confirmation.",
             "te": "అనుమతించిన స్నాన ప్రాంతాలు, నది మట్టం పరిమితులు, వైద్య కేంద్రాలు, మరుగుదొడ్లు, తాగునీరు, పార్కింగ్ మరియు అందుబాటుకు ఈవెంట్‌కు సంబంధించిన అధికారిక నిర్ధారణ అవసరం.",
-            "hi": "Se necesita confirmación oficial específica del evento sobre zonas de baño autorizadas, restricciones por nivel del río, puestos médicos, baños, agua potable, estacionamiento y accesibilidad."
+            "hi": "अनुमोदित स्नान क्षेत्रों, नदी के जलस्तर से जुड़ी पाबंदियों, चिकित्सा केंद्रों, शौचालयों, पेयजल, पार्किंग और सुगम पहुँच के लिए आयोजन-विशिष्ट आधिकारिक पुष्टि आवश्यक है।"
           }
         },
         {
@@ -683,7 +683,7 @@
           "fact_translations": {
             "en": "Check the official tourism hotel directory for a Kaleshwaram listing; availability and event-period pricing are not guaranteed.",
             "te": "కాళేశ్వరం వసతి జాబితాల కోసం అధికారిక పర్యాటక హోటల్ డైరెక్టరీని చూడండి; లభ్యత మరియు ధరలకు హామీ లేదు.",
-            "hi": "Consulte el directorio hotelero oficial para alojamientos en Kaleshwaram; no se garantizan disponibilidad ni tarifas."
+            "hi": "कालेश्वरम में आवास की सूची के लिए आधिकारिक पर्यटन होटल निर्देशिका देखें। उपलब्धता और आयोजन अवधि की कीमतों की गारंटी नहीं है।"
           }
         },
         {
@@ -700,7 +700,7 @@
           "fact_translations": {
             "en": "Use statewide emergency contacts and verify local Jayashankar Bhupalpally district contacts.",
             "te": "రాష్ట్రవ్యాప్త అత్యవసర సంప్రదింపులను ఉపయోగించండి మరియు జయశంకర్ భూపాలపల్లి జిల్లా సంప్రదింపులను నిర్ధారించండి.",
-            "hi": "Use los contactos estatales de emergencia y confirme los contactos del distrito de Jayashankar Bhupalpally."
+            "hi": "राज्य के आपातकालीन संपर्कों का उपयोग करें और जयशंकर भूपालपल्ली जिले के स्थानीय संपर्कों की पुष्टि करें।"
           }
         }
       ]
@@ -729,7 +729,7 @@
           "fact_translations": {
             "en": "Bhadrachalam is a Godavari riverbank town associated with Sri Sita Ramachandra Swamy Temple.",
             "te": "భద్రాచలం గోదావరి తీరంలోని పట్టణం; ఇది శ్రీ సీతా రామచంద్ర స్వామి ఆలయంతో సంబంధం కలిగి ఉంది.",
-            "hi": "Bhadrachalam es una ciudad a orillas del Godavari asociada al templo Sri Sita Ramachandra Swamy."
+            "hi": "भद्राचलम गोदावरी तट पर स्थित एक नगर है, जो श्री सीता रामचंद्र स्वामी मंदिर के लिए प्रसिद्ध है।"
           }
         },
         {
@@ -745,7 +745,7 @@
           "fact_translations": {
             "en": "A report published 2026-08-30 described earthwork and ₹49 crore sanctioned for ghats and related infrastructure; this does not prove completion.",
             "te": "2026-08-30 నాటి నివేదికలో ఘాట్‌లు మరియు అనుబంధ మౌలిక సదుపాయాల కోసం మట్టిపనులు, ₹49 కోట్ల మంజూరు గురించి పేర్కొంది; ఇది పనులు పూర్తయ్యాయని నిరూపించదు.",
-            "hi": "Un informe del 30-08-2026 describió movimiento de tierras y ₹49 crore aprobados para ghats e infraestructura relacionada; esto no demuestra que las obras estén terminadas."
+            "hi": "30-08-2026 की एक रिपोर्ट में मिट्टी के काम और घाटों तथा संबंधित बुनियादी ढाँचे के लिए ₹49 करोड़ स्वीकृत होने का उल्लेख था। इससे काम पूरा होने की पुष्टि नहीं होती।"
           }
         },
         {
@@ -762,7 +762,7 @@
           "fact_translations": {
             "en": "Road and ghat access works have been reported; current road status, diversions, parking and special transport schedules require a later official update.",
             "te": "రోడ్డు మరియు ఘాట్ ప్రవేశ పనుల గురించి నివేదికలు ఉన్నాయి; ప్రస్తుత రహదారి స్థితి, మళ్లింపులు, పార్కింగ్ మరియు ప్రత్యేక రవాణా సమయాలకు తాజా అధికారిక సమాచారం అవసరం.",
-            "hi": "Se han informado obras en carreteras y accesos a los ghats; el estado actual, los desvíos, el estacionamiento y los horarios especiales requieren información oficial reciente."
+            "hi": "सड़क और घाट तक पहुँच के कार्यों की रिपोर्टें आई हैं। वर्तमान सड़क स्थिति, डायवर्जन, पार्किंग और विशेष परिवहन समय-सारिणी के लिए नवीन आधिकारिक जानकारी आवश्यक है।"
           }
         },
         {
@@ -778,7 +778,7 @@
           "fact_translations": {
             "en": "Toilets, drinking water, sanitation, medical services, parking, accessibility and crowd controls need current event-specific confirmation.",
             "te": "మరుగుదొడ్లు, తాగునీరు, పారిశుధ్యం, వైద్య సేవలు, పార్కింగ్, అందుబాటు మరియు రద్దీ నియంత్రణకు ఈవెంట్‌కు సంబంధించిన తాజా నిర్ధారణ అవసరం.",
-            "hi": "Se requiere confirmación actual específica del evento sobre baños, agua potable, saneamiento, servicios médicos, estacionamiento, accesibilidad y control de multitudes."
+            "hi": "शौचालय, पेयजल, स्वच्छता, चिकित्सा सेवाएँ, पार्किंग, सुगम पहुँच और भीड़ नियंत्रण के लिए आयोजन-विशिष्ट वर्तमान पुष्टि आवश्यक है।"
           }
         },
         {
@@ -794,7 +794,7 @@
           "fact_translations": {
             "en": "Telangana Tourism lists Haritha Hotel Bhadrachalam; verify booking availability, current rates and contact details directly.",
             "te": "తెలంగాణ పర్యాటక శాఖ హరిథ హోటల్ భద్రాచలాన్ని జాబితా చేస్తుంది; బుకింగ్ లభ్యత, ప్రస్తుత ధరలు మరియు సంప్రదింపు వివరాలను నేరుగా నిర్ధారించండి.",
-            "hi": "Turismo de Telangana incluye el hotel Haritha en Bhadrachalam; confirme directamente disponibilidad, tarifas actuales y contactos."
+            "hi": "तेलंगाना पर्यटन पोर्टल भद्राचलम में हरिता होटल सूचीबद्ध करता है। बुकिंग उपलब्धता, वर्तमान दरें और संपर्क विवरण सीधे सत्यापित करें।"
           }
         },
         {
@@ -811,7 +811,7 @@
           "fact_translations": {
             "en": "Use statewide emergency numbers and confirm local Bhadradri Kothagudem district police and medical contacts.",
             "te": "రాష్ట్రవ్యాప్త అత్యవసర నంబర్లను ఉపయోగించండి మరియు భద్రాద్రి కొత్తగూడెం జిల్లా పోలీసు, వైద్య సంప్రదింపులను నిర్ధారించండి.",
-            "hi": "Use los números estatales de emergencia y confirme los contactos policiales y médicos del distrito de Bhadradri Kothagudem."
+            "hi": "राज्य के आपातकालीन नंबरों का उपयोग करें और भद्राद्री कोठागुडेम जिले के स्थानीय पुलिस तथा चिकित्सा संपर्कों की पुष्टि करें।"
           }
         }
       ]
@@ -841,7 +841,7 @@
           "fact_translations": {
             "en": "Parnasala is included in reported Bhadrachalam-area Pushkaralu preparation; event-specific ghat access is not confirmed in this registry.",
             "te": "భద్రాచలం ప్రాంత పుష్కరాల ఏర్పాట్లలో పర్ణశాల ప్రస్తావించబడింది; ఈ రిజిస్ట్రీలో ఈవెంట్‌కు సంబంధించిన ఘాట్ ప్రవేశం నిర్ధారించబడలేదు.",
-            "hi": "Parnasala se menciona en los preparativos de Pushkaralu del área de Bhadrachalam; esta ficha no confirma el acceso al ghat durante el evento."
+            "hi": "परनशाला का उल्लेख भद्राचलम क्षेत्र में पुष्करालु की तैयारियों संबंधी रिपोर्टों में है। इस रजिस्ट्री में आयोजन के दौरान घाट तक पहुँच की पुष्टि नहीं है।"
           }
         },
         {
@@ -857,7 +857,7 @@
           "fact_translations": {
             "en": "Current bus routes, road conditions, diversions and parking must be checked with district notices and TGSRTC.",
             "te": "ప్రస్తుత బస్సు మార్గాలు, రహదారి పరిస్థితులు, మళ్లింపులు మరియు పార్కింగ్ కోసం జిల్లా నోటీసులు, TGSRTC సమాచారాన్ని చూడండి.",
-            "hi": "Consulte los avisos del distrito y TGSRTC para conocer rutas de autobús, condiciones viales, desvíos y estacionamiento."
+            "hi": "वर्तमान बस मार्गों, सड़क की स्थिति, डायवर्जन और पार्किंग के लिए जिला सूचनाएँ तथा TGSRTC जाँचें।"
           }
         },
         {
@@ -873,7 +873,7 @@
           "fact_translations": {
             "en": "Toilets, drinking water, changing areas, medical support, accessibility and crowd-management arrangements need current official confirmation.",
             "te": "మరుగుదొడ్లు, తాగునీరు, దుస్తులు మార్చుకునే ప్రదేశాలు, వైద్య సహాయం, అందుబాటు మరియు రద్దీ నిర్వహణకు తాజా అధికారిక నిర్ధారణ అవసరం.",
-            "hi": "Se requiere confirmación oficial actual sobre baños, agua potable, vestuarios, asistencia médica, accesibilidad y gestión de multitudes."
+            "hi": "शौचालय, पेयजल, कपड़े बदलने की जगह, चिकित्सा सहायता, सुगम पहुँच और भीड़ प्रबंधन के लिए वर्तमान आधिकारिक पुष्टि आवश्यक है।"
           }
         },
         {
@@ -889,7 +889,7 @@
           "fact_translations": {
             "en": "Check official tourism listings and confirm onward travel; event-period accommodation availability is not established here.",
             "te": "అధికారిక పర్యాటక జాబితాలను చూడండి మరియు తదుపరి ప్రయాణాన్ని నిర్ధారించండి; పుష్కరాల కాలపు వసతి లభ్యత స్థాపించబడలేదు.",
-            "hi": "Consulte los listados turísticos oficiales y confirme el transporte posterior; no se ha establecido la disponibilidad de alojamiento durante Pushkaralu."
+            "hi": "आधिकारिक पर्यटन सूचियाँ देखें और आगे की यात्रा की पुष्टि करें। यहाँ पुष्करालु अवधि में आवास उपलब्धता स्थापित नहीं है।"
           }
         },
         {
@@ -906,11 +906,34 @@
           "fact_translations": {
             "en": "Use statewide emergency contacts and verify local district police and medical facilities.",
             "te": "రాష్ట్రవ్యాప్త అత్యవసర సంప్రదింపులను ఉపయోగించండి మరియు స్థానిక జిల్లా పోలీసు, వైద్య సేవలను నిర్ధారించండి.",
-            "hi": "Use los contactos estatales de emergencia y confirme los servicios policiales y médicos del distrito local."
+            "hi": "राज्य के आपातकालीन संपर्कों का उपयोग करें और स्थानीय जिला पुलिस तथा चिकित्सा सुविधाओं की पुष्टि करें।"
           }
         }
       ]
     }
   ],
-  "evidence_record_count": 38
+  "evidence_record_count": 38,
+  "status_definitions_translations": {
+    "en": {
+      "official_fact": "A government or official tourism page supports the stated general fact.",
+      "official_notice_published": "An official notice exists; it does not prove the work is complete.",
+      "reported_preparation": "A news report describes planned or ongoing works; verify with a later official update.",
+      "listed_not_availability_guaranteed": "An official portal lists a service/property, but current availability or event-period pricing is not guaranteed.",
+      "needs_verification": "The current event-specific detail could not be confirmed from the sources reviewed."
+    },
+    "te": {
+      "official_fact": "ప్రభుత్వ లేదా అధికారిక పర్యాటక పేజీ పేర్కొన్న సాధారణ విషయానికి మద్దతు ఇస్తుంది.",
+      "official_notice_published": "అధికారిక నోటీసు ఉంది; దాని వల్ల పని పూర్తయిందని నిర్ధారణ కాదు.",
+      "reported_preparation": "వార్తా నివేదికలో ప్రణాళికలో ఉన్న లేదా కొనసాగుతున్న పనులు వివరించబడ్డాయి; తాజా అధికారిక సమాచారంతో నిర్ధారించాలి.",
+      "listed_not_availability_guaranteed": "అధికారిక పోర్టల్‌లో సేవ/ఆస్తి జాబితాలో ఉంది; ప్రస్తుత లభ్యత లేదా పుష్కరాల ధరలకు హామీ లేదు.",
+      "needs_verification": "పరిశీలించిన మూలాల ద్వారా ప్రస్తుత కార్యక్రమానికి సంబంధించిన వివరాన్ని నిర్ధారించలేకపోయాం."
+    },
+    "hi": {
+      "official_fact": "सरकारी या आधिकारिक पर्यटन पृष्ठ इस सामान्य तथ्य का समर्थन करता है।",
+      "official_notice_published": "आधिकारिक सूचना उपलब्ध है; इससे यह सिद्ध नहीं होता कि काम पूरा हो गया है।",
+      "reported_preparation": "समाचार रिपोर्ट में नियोजित या जारी कार्यों का वर्णन है; नवीन आधिकारिक जानकारी से पुष्टि करें।",
+      "listed_not_availability_guaranteed": "आधिकारिक पोर्टल पर सेवा/संपत्ति सूचीबद्ध है, लेकिन वर्तमान उपलब्धता या पुष्करालु अवधि की कीमतों की गारंटी नहीं है।",
+      "needs_verification": "समीक्षा किए गए स्रोतों से आयोजन-विशिष्ट वर्तमान विवरण की पुष्टि नहीं हो सकी।"
+    }
+  }
 }
