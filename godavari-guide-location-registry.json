@@ -1,0 +1,725 @@
+{
+  "project": "Godavari Guide",
+  "dataset_title": "Godavari Pushkaralu 2027 — Pilgrim Location Evidence Registry",
+  "dataset_version": "1.0",
+  "last_reviewed": "2026-10-27",
+  "important_note": "Research registry, not a live operational feed. Planned works, reported works, transport options, facility availability, and contacts must be rechecked against current official notices before being presented as confirmed.",
+  "status_definitions": {
+    "official_fact": "A government or official tourism page supports the stated general fact.",
+    "official_notice_published": "An official notice exists; it does not prove the work is complete.",
+    "reported_preparation": "A news report describes planned or ongoing works; verify with a later official update.",
+    "listed_not_availability_guaranteed": "An official portal lists a service/property, but current availability or event-period pricing is not guaranteed.",
+    "needs_verification": "The current event-specific detail could not be confirmed from the sources reviewed."
+  },
+  "shared_sources": [
+    {
+      "source_id": "telangana_emergency_contacts",
+      "title": "Telangana Emergency Contacts",
+      "source_url": "https://www.telangana.gov.in/contacts/emergency-contacts/",
+      "source_type": "government",
+      "source_status": "official_state_directory",
+      "publication_date": null,
+      "last_checked": "2026-10-27",
+      "supports": [
+        "Statewide emergency contact numbers"
+      ],
+      "published_contacts": {
+        "police": "100",
+        "fire": "101",
+        "ambulance": [
+          "102",
+          "108"
+        ],
+        "women_helpline": "181",
+        "railway_enquiry": [
+          "131",
+          "135"
+        ],
+        "child_helpline": "1098",
+        "traffic_help": "1073"
+      },
+      "caveat": "These are statewide published numbers, not location-specific Pushkaralu control-room contacts."
+    },
+    {
+      "source_id": "telangana_tourism_hotels",
+      "title": "Telangana Tourism — Hotels",
+      "source_url": "https://tourism.telangana.gov.in/all-hotels",
+      "source_type": "official_tourism_portal",
+      "source_status": "official_listing",
+      "publication_date": null,
+      "last_checked": "2026-10-27",
+      "supports": [
+        "Tourism accommodation listings and booking links"
+      ],
+      "caveat": "Listings do not guarantee room availability, contact accuracy, or 2027 event-period pricing."
+    },
+    {
+      "source_id": "telangana_tourism_policy",
+      "title": "Telangana Tourism Policy 2025–2030",
+      "source_url": "https://invest.telangana.gov.in/policy-tourism/",
+      "source_type": "government_policy_portal",
+      "source_status": "official_policy",
+      "publication_date": null,
+      "last_checked": "2026-10-27",
+      "supports": [
+        "Tourism clusters including Basara, Bhadrachalam, Kotilingala, Dharmapuri and Kaleshwaram"
+      ],
+      "caveat": "Tourism-cluster inclusion does not confirm event-specific ghat access or facilities."
+    },
+    {
+      "source_id": "jagtial_dharmapuri_road_notice",
+      "title": "Dharmapuri preliminary land-acquisition notification for two roads linked to Pushkaralu 2027",
+      "source_url": "https://jagtial.telangana.gov.in/notice/la-preliminary-notification-of-two-separates-roads-in-dharmapuri-municipality-to-an-extent-of-ac-6-3050-gts-in-connection-with-ensuing-godavari-pushkaralu-2027/",
+      "source_type": "government_notice",
+      "source_status": "official_notice_published",
+      "publication_date": "2026-09-30",
+      "last_checked": "2026-10-27",
+      "supports": [
+        "Formal preliminary notification for land acquisition connected to two Dharmapuri roads"
+      ],
+      "caveat": "Notice is not proof of road completion, ghat completion, or access arrangements."
+    },
+    {
+      "source_id": "deccan_chronicle_works_oct_2026",
+      "title": "Godavari Pushkaralu Works Begin Along The River Course In Telangana",
+      "source_url": "https://www.deccanchronicle.com/southern-states/telangana/godavari-pushkaralu-works-begin-along-the-river-course-in-telangana-1998536",
+      "source_type": "news_report",
+      "source_status": "reported_preparation",
+      "publication_date": "2026-10-24",
+      "last_checked": "2026-10-27",
+      "supports": [
+        "Reported ghat and infrastructure project scope in Dharmapuri, Kotilingala and Manthani"
+      ],
+      "caveat": "Reported project dimensions, funding and preparation status should be checked against current government progress reports."
+    },
+    {
+      "source_id": "new_indian_express_bhadrachalam_aug_2026",
+      "title": "Godavari Pushkaram: Banks of devotion take shape",
+      "source_url": "https://www.newindianexpress.com/states/telangana/2026/Aug/30/godavari-pushkaram-banks-of-devotion-take-shape",
+      "source_type": "news_report",
+      "source_status": "reported_preparation",
+      "publication_date": "2026-08-30",
+      "last_checked": "2026-10-27",
+      "supports": [
+        "Reported Bhadrachalam ghat and related infrastructure preparations"
+      ],
+      "caveat": "Does not establish completion or present-day access."
+    },
+    {
+      "source_id": "telangana_state_police_emergency",
+      "title": "Telangana Police Emergency Numbers",
+      "source_url": "https://www.tspolice.gov.in/jsp/emergency.jsp",
+      "source_type": "government_police_directory",
+      "source_status": "official_directory",
+      "publication_date": null,
+      "last_checked": "2026-10-27",
+      "supports": [
+        "State and district police contact directory"
+      ],
+      "caveat": "Check the relevant district row before displaying a local control-room number."
+    },
+    {
+      "source_id": "tgsrtc",
+      "title": "Telangana State Road Transport Corporation",
+      "source_url": "https://tgsrtc.telangana.gov.in/",
+      "source_type": "official_transport_operator",
+      "source_status": "official_service_portal",
+      "publication_date": null,
+      "last_checked": "2026-10-27",
+      "supports": [
+        "Official bus service information"
+      ],
+      "caveat": "No specific Pushkaralu 2027 special timetable is confirmed in this dataset."
+    },
+    {
+      "source_id": "irctc",
+      "title": "IRCTC Train Search",
+      "source_url": "https://www.irctc.co.in/nget/train-search",
+      "source_type": "official_rail_booking_portal",
+      "source_status": "official_service_portal",
+      "publication_date": null,
+      "last_checked": "2026-10-27",
+      "supports": [
+        "Train search and booking"
+      ],
+      "caveat": "Use for current train schedules; this dataset does not assert a nearest station is always the most convenient route."
+    },
+    {
+      "source_id": "nirmal_basara_district",
+      "title": "Nirmal District — Sri Gnana Saraswathi Devasthanam, Basara",
+      "source_url": "https://nirmal.telangana.gov.in/tourist-place/sri-gnana-saraswathi-devasthanam-basara/",
+      "source_type": "government_district_page",
+      "source_status": "official_district_page",
+      "publication_date": null,
+      "last_checked": "2026-10-27",
+      "supports": [
+        "Basara temple location and general travel information"
+      ]
+    },
+    {
+      "source_id": "jagtial_district_about",
+      "title": "Jagtial District — About District",
+      "source_url": "https://jagtial.telangana.gov.in/about-district/",
+      "source_type": "government_district_page",
+      "source_status": "official_district_page",
+      "publication_date": null,
+      "last_checked": "2026-10-27",
+      "supports": [
+        "General district information, local temple locations and connectivity context"
+      ]
+    },
+    {
+      "source_id": "telangana_tourism_kaleshwaram",
+      "title": "Telangana Tourism — Kaleshwaram",
+      "source_url": "https://www.tourism.telangana.gov.in/page/kaleshwaram",
+      "source_type": "official_tourism_page",
+      "source_status": "official_destination_page",
+      "publication_date": null,
+      "last_checked": "2026-10-27",
+      "supports": [
+        "Kaleshwaram destination background"
+      ]
+    },
+    {
+      "source_id": "godavari_wikipedia",
+      "title": "Godavari River — Wikipedia",
+      "source_url": "https://en.wikipedia.org/wiki/Godavari_River",
+      "source_type": "encyclopedia",
+      "source_status": "background_only",
+      "publication_date": null,
+      "last_checked": "2026-10-27",
+      "supports": [
+        "General river geography background"
+      ],
+      "caveat": "Do not use as primary evidence for live services, access restrictions, emergency contacts, or construction status."
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "basara",
+      "location": "Basara",
+      "district": "Nirmal",
+      "state": "Telangana",
+      "languages": {
+        "en": "Basara is a major temple destination associated with Sri Gnana Saraswathi Temple on the Godavari. Event-specific ghat access and facilities need current confirmation.",
+        "te": "బాసర గోదావరి తీరంలోని శ్రీ జ్ఞాన సరస్వతి ఆలయానికి ప్రసిద్ధి చెందిన పుణ్యక్షేత్రం. పుష్కరాల ఘాట్ ప్రవేశం మరియు ప్రత్యేక సదుపాయాలను తాజా అధికారిక సమాచారంతో నిర్ధారించాలి.",
+        "hi": "बासर गोदावरी के किनारे स्थित श्री ज्ञान सरस्वती मंदिर के लिए प्रसिद्ध तीर्थस्थल है। पुष्करालु के दौरान घाट तक पहुँच और विशेष सुविधाओं की वर्तमान आधिकारिक पुष्टि आवश्यक है."
+      },
+      "records": [
+        {
+          "category": "temple_location",
+          "fact": "The district portal lists Sri Gnana Saraswathi Devasthanam at Basara as a temple/tourist destination.",
+          "status": "official_fact",
+          "source_ids": [
+            "nirmal_basara_district"
+          ],
+          "facility_completion_status": "not_applicable",
+          "publication_date": null,
+          "last_checked": "2026-10-27"
+        },
+        {
+          "category": "transport",
+          "fact": "General access information is available on the district page; the best current train-and-road combination and event-period bus schedules must be checked before publication.",
+          "status": "needs_verification",
+          "source_ids": [
+            "nirmal_basara_district",
+            "tgsrtc",
+            "irctc"
+          ],
+          "facility_completion_status": "not_confirmed",
+          "publication_date": null,
+          "last_checked": "2026-10-27"
+        },
+        {
+          "category": "accommodation",
+          "fact": "Check the official tourism hotel directory for Basara listings; room availability and Pushkaralu-period pricing are not guaranteed.",
+          "status": "listed_not_availability_guaranteed",
+          "source_ids": [
+            "telangana_tourism_hotels"
+          ],
+          "facility_completion_status": "availability_unverified",
+          "publication_date": null,
+          "last_checked": "2026-10-27"
+        },
+        {
+          "category": "facilities_and_access",
+          "fact": "Pushkaralu-specific bathing access, toilets, drinking water, changing rooms, medical posts, parking and accessibility arrangements have not been confirmed in this registry.",
+          "status": "needs_verification",
+          "source_ids": [
+            "nirmal_basara_district"
+          ],
+          "facility_completion_status": "unverified",
+          "publication_date": null,
+          "last_checked": "2026-10-27"
+        },
+        {
+          "category": "emergency_support",
+          "fact": "Use the statewide emergency directory and confirm local police/medical facilities before displaying location-specific details.",
+          "status": "official_fact",
+          "source_ids": [
+            "telangana_emergency_contacts",
+            "telangana_state_police_emergency"
+          ],
+          "facility_completion_status": "local_event_contacts_unverified",
+          "publication_date": null,
+          "last_checked": "2026-10-27"
+        }
+      ]
+    },
+    {
+      "location_id": "dharmapuri",
+      "location": "Dharmapuri",
+      "district": "Jagtial",
+      "state": "Telangana",
+      "languages": {
+        "en": "Dharmapuri is a Godavari pilgrimage location. A preliminary land-acquisition notice covers two roads linked to Pushkaralu 2027; completion and ghat access must be verified.",
+        "te": "ధర్మపురి గోదావరి తీర్థయాత్ర ప్రాంతం. పుష్కరాలు 2027కు సంబంధించిన రెండు రహదారుల భూసేకరణపై ప్రాథమిక నోటిఫికేషన్ ఉంది; పనుల పూర్తిస్థాయి మరియు ఘాట్ ప్రవేశాన్ని నిర్ధారించాలి.",
+        "hi": "धर्मपुरी गोदावरी का तीर्थस्थल है। पुष्करालु 2027 से जुड़ी दो सड़कों के लिए प्रारंभिक भूमि-अधिग्रहण अधिसूचना है; कार्य पूरा होने और घाट तक पहुँच की पुष्टि आवश्यक है."
+      },
+      "records": [
+        {
+          "category": "temple_and_ghat",
+          "fact": "Dharmapuri is associated with Sri Lakshmi Narasimha Swamy Temple and a Godavari bathing location.",
+          "status": "official_fact_and_reported_context",
+          "source_ids": [
+            "jagtial_district_about",
+            "deccan_chronicle_works_oct_2026"
+          ],
+          "facility_completion_status": "event_access_unverified",
+          "publication_date": null,
+          "last_checked": "2026-10-27"
+        },
+        {
+          "category": "road_work",
+          "fact": "A preliminary land-acquisition notification for two separate roads in Dharmapuri Municipality linked to Godavari Pushkaralu 2027 is listed with start date 2026-09-30 and end date 2026-11-28.",
+          "status": "official_notice_published",
+          "source_ids": [
+            "jagtial_dharmapuri_road_notice"
+          ],
+          "facility_completion_status": "not_proof_of_completion",
+          "publication_date": "2026-09-30",
+          "last_checked": "2026-10-27"
+        },
+        {
+          "category": "ghat_and_facilities",
+          "fact": "A news report dated 2026-10-24 reports planned 470-metre ghats and preparation of roads, changing rooms, drinking water, sanitation, electricity, medical services and parking.",
+          "status": "reported_preparation",
+          "source_ids": [
+            "deccan_chronicle_works_oct_2026"
+          ],
+          "facility_completion_status": "planned_or_in_progress_completion_unverified",
+          "publication_date": "2026-10-24",
+          "last_checked": "2026-10-27"
+        },
+        {
+          "category": "transport",
+          "fact": "Check TGSRTC and district road notices for current routes, diversions, parking and event-period special services.",
+          "status": "needs_verification",
+          "source_ids": [
+            "tgsrtc",
+            "jagtial_district_about",
+            "jagtial_dharmapuri_road_notice"
+          ],
+          "facility_completion_status": "current_arrangements_unverified",
+          "publication_date": null,
+          "last_checked": "2026-10-27"
+        },
+        {
+          "category": "accommodation",
+          "fact": "Use the official tourism hotel directory and district announcements; a dedicated event-period room allocation has not been verified.",
+          "status": "needs_verification",
+          "source_ids": [
+            "telangana_tourism_hotels"
+          ],
+          "facility_completion_status": "availability_unverified",
+          "publication_date": null,
+          "last_checked": "2026-10-27"
+        },
+        {
+          "category": "emergency_support",
+          "fact": "Use statewide emergency numbers and check the police directory for current Jagtial district contacts.",
+          "status": "official_fact",
+          "source_ids": [
+            "telangana_emergency_contacts",
+            "telangana_state_police_emergency"
+          ],
+          "facility_completion_status": "local_event_contacts_unverified",
+          "publication_date": null,
+          "last_checked": "2026-10-27"
+        }
+      ]
+    },
+    {
+      "location_id": "kotilingala",
+      "location": "Kotilingala",
+      "district": "Jagtial",
+      "state": "Telangana",
+      "languages": {
+        "en": "Kotilingala is a Godavari-bank temple destination. A 210-metre ghat project has been reported; completion and public access are not confirmed.",
+        "te": "కోటిలింగాల గోదావరి తీరంలోని ఆలయ ప్రాంతం. 210 మీటర్ల ఘాట్ పనుల గురించి వార్తా నివేదిక ఉంది; పనుల పూర్తిస్థాయి మరియు ప్రజల ప్రవేశం నిర్ధారించబడలేదు.",
+        "hi": "कोटिलिंगाला गोदावरी तट का मंदिर स्थल है। 210 मीटर के घाट की परियोजना की खबर प्रकाशित हुई है; निर्माण पूरा होने और सार्वजनिक पहुँच की पुष्टि नहीं है."
+      },
+      "records": [
+        {
+          "category": "temple_location",
+          "fact": "The Jagtial district portal identifies Sri Koteshwara Swamy Temple at Kotilingala, Velgatur mandal, on the Godavari riverbank.",
+          "status": "official_fact",
+          "source_ids": [
+            "jagtial_district_about"
+          ],
+          "facility_completion_status": "event_access_unverified",
+          "publication_date": null,
+          "last_checked": "2026-10-27"
+        },
+        {
+          "category": "ghat_construction",
+          "fact": "A news report dated 2026-10-24 describes a planned 210-metre ghat at Kotilingala.",
+          "status": "reported_preparation",
+          "source_ids": [
+            "deccan_chronicle_works_oct_2026"
+          ],
+          "facility_completion_status": "completion_and_opening_unverified",
+          "publication_date": "2026-10-24",
+          "last_checked": "2026-10-27"
+        },
+        {
+          "category": "road_and_transport",
+          "fact": "Use official TGSRTC information and current district road notices; no confirmed special Pushkaralu bus timetable is recorded here.",
+          "status": "needs_verification",
+          "source_ids": [
+            "tgsrtc",
+            "jagtial_district_about"
+          ],
+          "facility_completion_status": "current_arrangements_unverified",
+          "publication_date": null,
+          "last_checked": "2026-10-27"
+        },
+        {
+          "category": "facilities",
+          "fact": "Toilets, drinking water, changing rooms, medical posts, parking, accessibility and crowd controls require current official confirmation.",
+          "status": "needs_verification",
+          "source_ids": [
+            "deccan_chronicle_works_oct_2026"
+          ],
+          "facility_completion_status": "planned_or_unverified",
+          "publication_date": "2026-10-24",
+          "last_checked": "2026-10-27"
+        },
+        {
+          "category": "accommodation",
+          "fact": "Check official tourism listings and district notices; event-period room availability has not been confirmed.",
+          "status": "needs_verification",
+          "source_ids": [
+            "telangana_tourism_hotels"
+          ],
+          "facility_completion_status": "availability_unverified",
+          "publication_date": null,
+          "last_checked": "2026-10-27"
+        },
+        {
+          "category": "emergency_support",
+          "fact": "Use statewide emergency numbers and confirm local police/medical posts before travel.",
+          "status": "official_fact",
+          "source_ids": [
+            "telangana_emergency_contacts",
+            "telangana_state_police_emergency"
+          ],
+          "facility_completion_status": "local_event_contacts_unverified",
+          "publication_date": null,
+          "last_checked": "2026-10-27"
+        }
+      ]
+    },
+    {
+      "location_id": "manthani",
+      "location": "Manthani",
+      "district": "Peddapalli",
+      "state": "Telangana",
+      "languages": {
+        "en": "Manthani is a reported focus of Pushkaralu preparation. A 180-metre ghat and road/facility improvements have been reported as planned or underway; completion is unverified.",
+        "te": "మంథని పుష్కరాల ఏర్పాట్లలో ముఖ్యమైన ప్రాంతంగా నివేదించబడింది. 180 మీటర్ల ఘాట్, రహదారులు మరియు ఇతర సదుపాయాల పనులు ప్రణాళికలో ఉన్నట్లు/జరుగుతున్నట్లు వార్తలు తెలిపాయి; పూర్తిస్థాయి నిర్ధారించబడలేదు.",
+        "hi": "मंथनी पुष्करालु की तैयारियों का एक प्रमुख स्थान बताया गया है। 180 मीटर घाट और सड़क/सुविधा सुधारों की योजना या काम की खबर है; पूरा होना सत्यापित नहीं है."
+      },
+      "records": [
+        {
+          "category": "ghat_construction",
+          "fact": "A news report dated 2026-10-24 describes plans for a 180-metre bathing ghat at Manthani.",
+          "status": "reported_preparation",
+          "source_ids": [
+            "deccan_chronicle_works_oct_2026"
+          ],
+          "facility_completion_status": "completion_and_opening_unverified",
+          "publication_date": "2026-10-24",
+          "last_checked": "2026-10-27"
+        },
+        {
+          "category": "road_and_transport",
+          "fact": "The report describes road work between Manthani bus depot and the riverbank, plus a road towards Ramagundam Road; current route conditions and diversions must be checked.",
+          "status": "reported_preparation",
+          "source_ids": [
+            "deccan_chronicle_works_oct_2026",
+            "tgsrtc"
+          ],
+          "facility_completion_status": "completion_and_current_route_unverified",
+          "publication_date": "2026-10-24",
+          "last_checked": "2026-10-27"
+        },
+        {
+          "category": "facilities",
+          "fact": "Changing rooms, drinking water, sanitation, medical services, parking and crowd management were described as planned facilities; current availability is not confirmed.",
+          "status": "reported_preparation",
+          "source_ids": [
+            "deccan_chronicle_works_oct_2026"
+          ],
+          "facility_completion_status": "planned_or_in_progress_completion_unverified",
+          "publication_date": "2026-10-24",
+          "last_checked": "2026-10-27"
+        },
+        {
+          "category": "accommodation",
+          "fact": "No dedicated Pushkaralu-period accommodation inventory was confirmed in the reviewed sources.",
+          "status": "needs_verification",
+          "source_ids": [
+            "telangana_tourism_hotels"
+          ],
+          "facility_completion_status": "availability_unverified",
+          "publication_date": null,
+          "last_checked": "2026-10-27"
+        },
+        {
+          "category": "emergency_support",
+          "fact": "Use statewide emergency numbers and verify local Peddapalli district police and medical facilities.",
+          "status": "official_fact",
+          "source_ids": [
+            "telangana_emergency_contacts",
+            "telangana_state_police_emergency"
+          ],
+          "facility_completion_status": "local_event_contacts_unverified",
+          "publication_date": null,
+          "last_checked": "2026-10-27"
+        }
+      ]
+    },
+    {
+      "location_id": "kaleshwaram",
+      "location": "Kaleshwaram",
+      "district": "Jayashankar Bhupalpally",
+      "state": "Telangana",
+      "languages": {
+        "en": "Kaleshwaram is a Telangana Tourism destination associated with the Godavari–Pranahita confluence. Pushkaralu-specific bathing access and services need verification.",
+        "te": "కాళేశ్వరం గోదావరి–ప్రాణహిత సంగమానికి సంబంధించిన తెలంగాణ పర్యాటక ప్రాంతం. పుష్కరాల ప్రత్యేక ఘాట్ ప్రవేశం మరియు సేవలను నిర్ధారించాలి.",
+        "hi": "कालेश्वरम गोदावरी–प्राणहिता संगम से जुड़ा तेलंगाना पर्यटन स्थल है। पुष्करालु के लिए विशेष घाट पहुँच और सेवाओं की पुष्टि आवश्यक है."
+      },
+      "records": [
+        {
+          "category": "destination_location",
+          "fact": "Telangana Tourism lists Kaleshwaram as a destination.",
+          "status": "official_fact",
+          "source_ids": [
+            "telangana_tourism_kaleshwaram",
+            "telangana_tourism_policy"
+          ],
+          "facility_completion_status": "not_applicable",
+          "publication_date": null,
+          "last_checked": "2026-10-27"
+        },
+        {
+          "category": "transport",
+          "fact": "Check current TGSRTC schedules and local district road notices; no confirmed event-period special timetable is recorded here.",
+          "status": "needs_verification",
+          "source_ids": [
+            "tgsrtc"
+          ],
+          "facility_completion_status": "current_arrangements_unverified",
+          "publication_date": null,
+          "last_checked": "2026-10-27"
+        },
+        {
+          "category": "facilities_and_water_safety",
+          "fact": "Approved bathing areas, river-level restrictions, medical posts, toilets, drinking water, parking and accessibility require event-specific official confirmation.",
+          "status": "needs_verification",
+          "source_ids": [
+            "telangana_tourism_kaleshwaram"
+          ],
+          "facility_completion_status": "unverified",
+          "publication_date": null,
+          "last_checked": "2026-10-27"
+        },
+        {
+          "category": "accommodation",
+          "fact": "Check the official tourism hotel directory for a Kaleshwaram listing; availability and event-period pricing are not guaranteed.",
+          "status": "listed_not_availability_guaranteed",
+          "source_ids": [
+            "telangana_tourism_hotels"
+          ],
+          "facility_completion_status": "availability_unverified",
+          "publication_date": null,
+          "last_checked": "2026-10-27"
+        },
+        {
+          "category": "emergency_support",
+          "fact": "Use statewide emergency contacts and verify local Jayashankar Bhupalpally district contacts.",
+          "status": "official_fact",
+          "source_ids": [
+            "telangana_emergency_contacts",
+            "telangana_state_police_emergency"
+          ],
+          "facility_completion_status": "local_event_contacts_unverified",
+          "publication_date": null,
+          "last_checked": "2026-10-27"
+        }
+      ]
+    },
+    {
+      "location_id": "bhadrachalam",
+      "location": "Bhadrachalam",
+      "district": "Bhadradri Kothagudem",
+      "state": "Telangana",
+      "languages": {
+        "en": "Bhadrachalam is a Godavari riverbank pilgrimage town. Reports describe phased ghat and related infrastructure preparation; completion and access must be checked.",
+        "te": "భద్రాచలం గోదావరి తీరంలోని పుణ్యక్షేత్ర పట్టణం. ఘాట్ మరియు అనుబంధ మౌలిక సదుపాయాల పనులు దశలవారీగా జరుగుతున్నట్లు నివేదికలు ఉన్నాయి; పూర్తిస్థాయి మరియు ప్రవేశాన్ని నిర్ధారించాలి.",
+        "hi": "भद्राचलम गोदावरी तट का तीर्थ नगर है। घाट और संबंधित बुनियादी ढाँचे के चरणबद्ध कार्यों की खबर है; पूरा होना और पहुँच सत्यापित करें."
+      },
+      "records": [
+        {
+          "category": "temple_and_location",
+          "fact": "Bhadrachalam is a Godavari riverbank town associated with Sri Sita Ramachandra Swamy Temple.",
+          "status": "official_background_fact",
+          "source_ids": [
+            "telangana_tourism_policy"
+          ],
+          "facility_completion_status": "event_access_unverified",
+          "publication_date": null,
+          "last_checked": "2026-10-27"
+        },
+        {
+          "category": "ghat_and_infrastructure",
+          "fact": "A report published 2026-08-30 described earthwork and ₹49 crore sanctioned for ghats and related infrastructure; this does not prove completion.",
+          "status": "reported_preparation",
+          "source_ids": [
+            "new_indian_express_bhadrachalam_aug_2026"
+          ],
+          "facility_completion_status": "completion_unverified",
+          "publication_date": "2026-08-30",
+          "last_checked": "2026-10-27"
+        },
+        {
+          "category": "transport_and_roads",
+          "fact": "Road and ghat access works have been reported; current road status, diversions, parking and special transport schedules require a later official update.",
+          "status": "reported_preparation",
+          "source_ids": [
+            "new_indian_express_bhadrachalam_aug_2026",
+            "tgsrtc"
+          ],
+          "facility_completion_status": "completion_and_current_arrangements_unverified",
+          "publication_date": "2026-08-30",
+          "last_checked": "2026-10-27"
+        },
+        {
+          "category": "facilities",
+          "fact": "Toilets, drinking water, sanitation, medical services, parking, accessibility and crowd controls need current event-specific confirmation.",
+          "status": "needs_verification",
+          "source_ids": [
+            "new_indian_express_bhadrachalam_aug_2026"
+          ],
+          "facility_completion_status": "planned_or_unverified",
+          "publication_date": "2026-08-30",
+          "last_checked": "2026-10-27"
+        },
+        {
+          "category": "accommodation",
+          "fact": "Telangana Tourism lists Haritha Hotel Bhadrachalam; verify booking availability, current rates and contact details directly.",
+          "status": "listed_not_availability_guaranteed",
+          "source_ids": [
+            "telangana_tourism_hotels"
+          ],
+          "facility_completion_status": "availability_unverified",
+          "publication_date": null,
+          "last_checked": "2026-10-27"
+        },
+        {
+          "category": "emergency_support",
+          "fact": "Use statewide emergency numbers and confirm local Bhadradri Kothagudem district police and medical contacts.",
+          "status": "official_fact",
+          "source_ids": [
+            "telangana_emergency_contacts",
+            "telangana_state_police_emergency"
+          ],
+          "facility_completion_status": "local_event_contacts_unverified",
+          "publication_date": null,
+          "last_checked": "2026-10-27"
+        }
+      ]
+    },
+    {
+      "location_id": "parnasala",
+      "location": "Parnasala",
+      "district": "Bhadradri Kothagudem",
+      "state": "Telangana",
+      "languages": {
+        "en": "Parnasala is included in reported Pushkaralu infrastructure preparation around Bhadrachalam. Ghat renovation and event-period access require confirmation.",
+        "te": "పర్ణశాల భద్రాచలం పరిసర పుష్కరాల మౌలిక సదుపాయాల ఏర్పాట్లలో ప్రస్తావించబడింది. ఘాట్ మరమ్మతులు మరియు పుష్కరాల సమయంలో ప్రవేశాన్ని నిర్ధారించాలి.",
+        "hi": "पर्णशाला को भद्राचलम क्षेत्र की पुष्करालु तैयारियों में शामिल बताया गया है। घाट नवीनीकरण और आयोजन के दौरान पहुँच की पुष्टि आवश्यक है."
+      },
+      "records": [
+        {
+          "category": "destination_and_works",
+          "fact": "Parnasala is included in reported Bhadrachalam-area Pushkaralu preparation; event-specific ghat access is not confirmed in this registry.",
+          "status": "reported_preparation",
+          "source_ids": [
+            "telangana_tourism_policy",
+            "new_indian_express_bhadrachalam_aug_2026"
+          ],
+          "facility_completion_status": "completion_and_access_unverified",
+          "publication_date": "2026-08-30",
+          "last_checked": "2026-10-27"
+        },
+        {
+          "category": "transport",
+          "fact": "Current bus routes, road conditions, diversions and parking must be checked with district notices and TGSRTC.",
+          "status": "needs_verification",
+          "source_ids": [
+            "tgsrtc"
+          ],
+          "facility_completion_status": "current_arrangements_unverified",
+          "publication_date": null,
+          "last_checked": "2026-10-27"
+        },
+        {
+          "category": "facilities",
+          "fact": "Toilets, drinking water, changing areas, medical support, accessibility and crowd-management arrangements need current official confirmation.",
+          "status": "needs_verification",
+          "source_ids": [
+            "new_indian_express_bhadrachalam_aug_2026"
+          ],
+          "facility_completion_status": "unverified",
+          "publication_date": "2026-08-30",
+          "last_checked": "2026-10-27"
+        },
+        {
+          "category": "accommodation",
+          "fact": "Check official tourism listings and confirm onward travel; event-period accommodation availability is not established here.",
+          "status": "needs_verification",
+          "source_ids": [
+            "telangana_tourism_hotels"
+          ],
+          "facility_completion_status": "availability_unverified",
+          "publication_date": null,
+          "last_checked": "2026-10-27"
+        },
+        {
+          "category": "emergency_support",
+          "fact": "Use statewide emergency contacts and verify local district police and medical facilities.",
+          "status": "official_fact",
+          "source_ids": [
+            "telangana_emergency_contacts",
+            "telangana_state_police_emergency"
+          ],
+          "facility_completion_status": "local_event_contacts_unverified",
+          "publication_date": null,
+          "last_checked": "2026-10-27"
+        }
+      ]
+    }
+  ]
+}
