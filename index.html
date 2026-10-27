@@ -35,6 +35,9 @@
     .empty{display:none;padding:18px;color:var(--muted);background:white;border:1px dashed var(--line);border-radius:12px}.small{font-size:.82rem;color:var(--muted)}
     @media(max-width:800px){.hero-grid{grid-template-columns:1fr}.hero-card{max-width:540px}.navlinks{gap:12px}.navlinks a{display:none}.grid3{grid-template-columns:repeat(2,1fr)}.section-head{display:block}.section-head p{margin-top:12px}}
     @media(max-width:560px){.hero{padding:55px 0}.grid3,.help-grid{grid-template-columns:1fr}.nav{gap:10px}.brand{font-size:1rem}.brandmark{width:37px;height:37px}.lang{padding:8px;font-size:.86rem}.mini-stat{grid-template-columns:1fr 1fr}.emergency{display:block}.emergency .btn{margin-top:16px}.searchbox{display:block}.searchbox input{margin-bottom:8px}}
+
+    .directory-tools{display:grid;grid-template-columns:2fr 1fr 1fr;gap:10px;margin:0 0 20px}.directory-tools input,.directory-tools select{min-width:0;width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:#fff;color:var(--ink)}.registry-meta{color:var(--muted);font-size:.86rem;margin:0 0 16px}.registry-card{display:flex;flex-direction:column;gap:10px}.registry-card .tag{align-self:flex-start;margin-top:0}.registry-card .evidence{font-size:.91rem}.registry-card .meta{font-size:.79rem;color:var(--muted);margin-top:auto}.source-links{display:flex;flex-wrap:wrap;gap:8px}.source-links a{font-size:.8rem;color:var(--teal);font-weight:750}.registry-state{padding:14px 16px;background:#fff;border:1px dashed var(--line);border-radius:12px;color:var(--muted);margin:12px 0 20px}
+    @media(max-width:700px){.directory-tools{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
@@ -43,7 +46,7 @@
     <div class="wrap nav">
       <a class="brand" href="#home" aria-label="Godavari Guide home"><span class="brandmark">🌊</span><span>Godavari Guide</span></a>
       <nav class="navlinks" aria-label="Main navigation">
-        <a href="#explore" data-i18n="navExplore">Explore</a><a href="#ghats" data-i18n="navGhats">Ghats</a><a href="#routes" data-i18n="navRoutes">Routes</a><a href="#facilities" data-i18n="navFacilities">Facilities</a><a href="#sources" data-i18n="navSources">Sources</a><a href="#help" data-i18n="navHelp">Help</a>
+        <a href="#explore" data-i18n="navExplore">Explore</a><a href="#directory">Directory</a><a href="#ghats" data-i18n="navGhats">Ghats</a><a href="#routes" data-i18n="navRoutes">Routes</a><a href="#facilities" data-i18n="navFacilities">Facilities</a><a href="#sources" data-i18n="navSources">Sources</a><a href="#help" data-i18n="navHelp">Help</a>
       </nav>
       <label class="small" for="language" style="display:none">Language</label>
       <select id="language" class="lang" aria-label="Choose language">
@@ -129,6 +132,22 @@
       </div>
     </section>
 
+
+
+    <section id="directory">
+      <div class="wrap">
+        <div class="section-head"><div><div class="kicker">SEARCHABLE REGISTRY</div><h2 id="directoryTitle" class="section-title" data-i18n="directoryTitle">Pilgrim information directory</h2></div><p id="directoryIntro" data-i18n="directoryIntro">Search location-specific evidence, filter by district or information type, and open the supporting source. Registry entries are not live operational confirmations.</p></div>
+        <div class="directory-tools">
+          <input id="registrySearch" type="search" placeholder="Search locations or information…" aria-label="Search location registry">
+          <select id="districtFilter" aria-label="Filter by district"><option value="">All districts</option></select>
+          <select id="categoryFilter" aria-label="Filter by information type"><option value="">All information types</option></select>
+        </div>
+        <p class="registry-meta" id="registryMeta">Loading registry…</p>
+        <div id="registryNotice" class="registry-state" role="status">Loading the location registry from the repository…</div>
+        <div class="grid3" id="registryCards"></div>
+        <p class="small" style="margin-top:18px">Dataset review date: <span id="registryReviewDate">—</span>. Planned/reported work is not proof of completion. Always confirm current details with official authorities before travel.</p>
+      </div>
+    </section>
 
     <section class="feature-band" id="routes">
       <div class="wrap">
@@ -263,7 +282,7 @@
     function runSearch() {
       const q = searchInput.value.trim().toLocaleLowerCase();
       let shown = 0;
-      cards.forEach(card => {
+      document.querySelectorAll('.searchable').forEach(card => {
         const haystack = (card.textContent + ' ' + card.dataset.search).toLocaleLowerCase();
         const match = !q || haystack.includes(q);
         card.style.display = match ? '' : 'none';
@@ -274,6 +293,58 @@
     document.getElementById('searchButton').addEventListener('click', runSearch);
     searchInput.addEventListener('input', runSearch);
     searchInput.addEventListener('keydown', e => { if (e.key === 'Enter') runSearch(); });
+    // Load the repository-hosted, evidence-based registry. The JSON and this HTML must be in the same GitHub Pages root.
+    const registryText = {
+      en:{title:'Pilgrim information directory',intro:'Search location-specific evidence, filter by district or information type, and open the supporting source. Registry entries are not live operational confirmations.',loading:'Loading registry…',loaded:'Showing {n} evidence records across {l} locations.',empty:'No registry records match these filters.',failed:'The registry could not be loaded. Confirm that godavari-guide-location-registry.json is in the repository root and that its filename matches exactly.',search:'Search locations or information…',district:'All districts',category:'All information types',
+      categories:{temple_location:'Temple / location',transport:'Transport',accommodation:'Accommodation',facilities_and_access:'Facilities & access',emergency_support:'Emergency support',ghat_development:'Ghat development',road_work:'Road works',other:'Other'},
+      statuses:{official_fact:'Official general fact',official_notice_published:'Official notice published',reported_preparation:'Preparation reported — verify progress',listed_not_availability_guaranteed:'Listed — availability not guaranteed',needs_verification:'Needs verification'},
+      fact:'Evidence',source:'Supporting sources',checked:'Last checked',publication:'Publication date',completion:'Facility status',noSource:'No linked source'} ,
+      te:{title:'యాత్రికుల సమాచార డైరెక్టరీ',intro:'ప్రాంతం లేదా సమాచార రకం ఆధారంగా వెతికి, ఆధారమైన మూలాన్ని తెరవండి. ఈ రికార్డులు ప్రత్యక్ష సమయ నిర్ధారణలు కావు.',loading:'రిజిస్ట్రీ లోడ్ అవుతోంది…',loaded:'{l} ప్రాంతాల్లో {n} ఆధార రికార్డులు చూపబడుతున్నాయి.',empty:'ఈ ఫిల్టర్‌లకు సరిపోయే రికార్డులు లేవు.',failed:'రిజిస్ట్రీ లోడ్ కాలేదు. godavari-guide-location-registry.json ఫైల్ రిపాజిటరీ రూట్‌లో ఉందో చూడండి.',search:'ప్రాంతాలు లేదా సమాచారం వెతకండి…',district:'అన్ని జిల్లాలు',category:'అన్ని సమాచార రకాలు',categories:{temple_location:'ఆలయం / ప్రాంతం',transport:'రవాణా',accommodation:'వసతి',facilities_and_access:'సదుపాయాలు మరియు ప్రవేశం',emergency_support:'అత్యవసర సహాయం',ghat_development:'ఘాట్ అభివృద్ధి',road_work:'రోడ్డు పనులు',other:'ఇతరాలు'},statuses:{official_fact:'అధికారిక సాధారణ సమాచారం',official_notice_published:'అధికారిక నోటీసు ప్రచురించబడింది',reported_preparation:'సన్నాహాలు నివేదించబడ్డాయి — స్థితి నిర్ధారించండి',listed_not_availability_guaranteed:'జాబితాలో ఉంది — లభ్యత హామీ కాదు',needs_verification:'నిర్ధారణ అవసరం'},fact:'ఆధారం',source:'ఆధార మూలాలు',checked:'చివరిగా తనిఖీ',publication:'ప్రచురణ తేదీ',completion:'సదుపాయ స్థితి',noSource:'మూలం లింక్ చేయలేదు'},
+      hi:{title:'तीर्थयात्री सूचना निर्देशिका',intro:'स्थान या सूचना प्रकार के अनुसार खोजें और सहायक स्रोत खोलें। ये रिकॉर्ड लाइव परिचालन पुष्टि नहीं हैं।',loading:'रजिस्ट्री लोड हो रही है…',loaded:'{l} स्थानों के {n} साक्ष्य रिकॉर्ड दिखाए जा रहे हैं।',empty:'इन फ़िल्टरों से मेल खाने वाले रिकॉर्ड नहीं मिले।',failed:'रजिस्ट्री लोड नहीं हुई। जाँचें कि godavari-guide-location-registry.json रिपॉज़िटरी के root में मौजूद है।',search:'स्थान या जानकारी खोजें…',district:'सभी जिले',category:'सभी सूचना प्रकार',categories:{temple_location:'मंदिर / स्थान',transport:'परिवहन',accommodation:'आवास',facilities_and_access:'सुविधाएँ और पहुँच',emergency_support:'आपात सहायता',ghat_development:'घाट विकास',road_work:'सड़क कार्य',other:'अन्य'},statuses:{official_fact:'आधिकारिक सामान्य तथ्य',official_notice_published:'आधिकारिक सूचना प्रकाशित',reported_preparation:'तैयारी की रिपोर्ट — स्थिति जाँचें',listed_not_availability_guaranteed:'सूचीबद्ध — उपलब्धता की गारंटी नहीं',needs_verification:'पुष्टि आवश्यक'},fact:'साक्ष्य',source:'सहायक स्रोत',checked:'अंतिम जाँच',publication:'प्रकाशन तिथि',completion:'सुविधा स्थिति',noSource:'स्रोत लिंक उपलब्ध नहीं'}
+    };
+    let registryData = null;
+    const registryCards = document.getElementById('registryCards');
+    const registryNotice = document.getElementById('registryNotice');
+    const registrySearch = document.getElementById('registrySearch');
+    const districtFilter = document.getElementById('districtFilter');
+    const categoryFilter = document.getElementById('categoryFilter');
+    function escapeHTML(value){return String(value ?? '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));}
+    function currentRegistryText(){return registryText[languageSelect.value] || registryText.en;}
+    function loadRegistryOptions(){
+      const t=currentRegistryText(); const previousDistrict=districtFilter.value; const previousCategory=categoryFilter.value; const districts=[...new Set(registryData.locations.map(x=>x.district).filter(Boolean))].sort();
+      districtFilter.innerHTML=`<option value="">${escapeHTML(t.district)}</option>`+districts.map(x=>`<option value="${escapeHTML(x)}">${escapeHTML(x)}</option>`).join('');
+      const categories=[...new Set(registryData.locations.flatMap(x=>(x.records||[]).map(r=>r.category)).filter(Boolean))].sort();
+      categoryFilter.innerHTML=`<option value="">${escapeHTML(t.category)}</option>`+categories.map(x=>`<option value="${escapeHTML(x)}">${escapeHTML(t.categories[x]||x.replaceAll('_',' '))}</option>`).join('');
+      if(districts.includes(previousDistrict))districtFilter.value=previousDistrict; if(categories.includes(previousCategory))categoryFilter.value=previousCategory;
+      registrySearch.placeholder=t.search;
+    }
+    function renderRegistry(){
+      if(!registryData)return; const t=currentRegistryText(); loadRegistryOptions();
+      const q=registrySearch.value.trim().toLocaleLowerCase(); const district=districtFilter.value; const category=categoryFilter.value; let out=[]; let locationCount=new Set();
+      for(const loc of registryData.locations){ if(district && loc.district!==district)continue;
+        for(const rec of (loc.records||[])){ if(category && rec.category!==category)continue;
+          const srcs=(rec.source_ids||[]).map(id=>(registryData.shared_sources||[]).find(s=>s.source_id===id)).filter(Boolean);
+          const hay=[loc.location,loc.district,loc.languages?.en,loc.languages?.te,loc.languages?.hi,rec.fact,rec.category,rec.status,rec.facility_completion_status,...srcs.map(s=>s.title)].join(' ').toLocaleLowerCase();
+          if(q && !hay.includes(q))continue; locationCount.add(loc.location);
+          const status=t.statuses[rec.status]||rec.status||'Needs verification';
+          const links=srcs.length?srcs.map(src=>`<a href="${escapeHTML(src.source_url)}" target="_blank" rel="noopener noreferrer">${escapeHTML(src.title)} ↗</a>`).join(''):`<span class="small">${escapeHTML(t.noSource)}</span>`;
+          const langDesc=loc.languages?.[languageSelect.value]||loc.languages?.en||'';
+          out.push(`<article class="card registry-card"><div class="icon">${rec.category==='emergency_support'?'🧰':rec.category==='transport'?'🧭':rec.category==='accommodation'?'🛏️':rec.category==='facilities_and_access'?'💧':'📍'}</div><h3>${escapeHTML(loc.location)} <span class="small">· ${escapeHTML(loc.district||'Telangana')}</span></h3><p>${escapeHTML(langDesc)}</p><p class="evidence"><strong>${escapeHTML(t.fact)}:</strong> ${escapeHTML(rec.fact)}</p><span class="tag">${escapeHTML(status)}</span><div class="meta">${escapeHTML(t.checked)}: ${escapeHTML(rec.last_checked||'Not stated')} · ${escapeHTML(t.completion)}: ${escapeHTML(rec.facility_completion_status||'not stated')}${rec.publication_date?` · ${escapeHTML(t.publication)}: ${escapeHTML(rec.publication_date)}`:''}</div><div><strong>${escapeHTML(t.source)}:</strong><div class="source-links">${links}</div></div></article>`);
+        }
+      }
+      registryCards.innerHTML=out.join(''); registryNotice.style.display=out.length?'none':'block'; registryNotice.textContent=t.empty;
+      const msg=t.loaded.replace('{n}',String(out.length)).replace('{l}',String(locationCount.size)); document.getElementById('registryMeta').textContent=msg;
+    }
+    async function fetchRegistry(){
+      try{const response=await fetch('./godavari-guide-location-registry.json',{cache:'no-cache'});if(!response.ok)throw new Error('HTTP '+response.status);registryData=await response.json();
+        document.getElementById('registryReviewDate').textContent=registryData.last_reviewed||'Not stated'; registryNotice.style.display='none'; renderRegistry();
+      }catch(error){registryNotice.textContent=currentRegistryText().failed;registryNotice.style.display='block';document.getElementById('registryMeta').textContent='Registry unavailable';console.error('Godavari Guide registry load failed:',error);}
+    }
+    registrySearch.addEventListener('input',renderRegistry);districtFilter.addEventListener('change',renderRegistry);categoryFilter.addEventListener('change',renderRegistry);
+    const originalSetLanguage=setLanguage;
+    setLanguage=function(lang){originalSetLanguage(lang); if(registryData)renderRegistry(); else {const t=registryText[lang]||registryText.en;document.getElementById('directoryTitle').textContent=t.title;document.getElementById('directoryIntro').textContent=t.intro;registryNotice.textContent=t.loading;}};
+    fetchRegistry();
+
     document.getElementById('year').textContent = new Date().getFullYear();
     setLanguage('en');
   </script>
